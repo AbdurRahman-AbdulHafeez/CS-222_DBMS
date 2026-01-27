@@ -1,0 +1,27 @@
+--------------------------------------------------------
+--  File created - Wednesday-January-28-2026   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table PATRONS
+--------------------------------------------------------
+
+  CREATE TABLE "PATRONS" 
+   (	"PATRON_ID" NUMBER, 
+	"LAST_NAME" VARCHAR2(30 BYTE), 
+	"FIRST_NAME" VARCHAR2(30 BYTE), 
+	"STREET_ADDRESS" VARCHAR2(30 BYTE), 
+	"CITY_STATE_ZIP" VARCHAR2(30 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+ 
+
+   COMMENT ON COLUMN "PATRONS"."PATRON_ID" IS 'PK';
+REM INSERTING into PATRONS
+SET DEFINE OFF;
+Insert into PATRONS (PATRON_ID,LAST_NAME,FIRST_NAME,STREET_ADDRESS,CITY_STATE_ZIP) values (100,'Smith','Jane','123 Main Street','Mytown, MA 01234');
+Insert into PATRONS (PATRON_ID,LAST_NAME,FIRST_NAME,STREET_ADDRESS,CITY_STATE_ZIP) values (101,'Chen','William','16 S.Maple Road','Mytown, MA 01234');
+Insert into PATRONS (PATRON_ID,LAST_NAME,FIRST_NAME,STREET_ADDRESS,CITY_STATE_ZIP) values (102,'Fernandez','Maria','502 Harrison Blvd.','Sometown, NH 03078');
+Insert into PATRONS (PATRON_ID,LAST_NAME,FIRST_NAME,STREET_ADDRESS,CITY_STATE_ZIP) values (103,'Murphy','Sam','57 Main Street','Mytown, MA 01234');
