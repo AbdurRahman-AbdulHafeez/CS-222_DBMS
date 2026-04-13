@@ -1,4 +1,4 @@
-# CS-222_DBMS (LABS)
+# CS-222_DBMS (LABS & Project)
 Database Management System (Spring 2026)
 
 <b>Lab Session 01:<b> Explore SQL Developer Tool<br>
